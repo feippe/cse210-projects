@@ -10,6 +10,8 @@ class Program
         int percentage = int.Parse(percentageString);
 
         string letter;
+        int remainder = percentage % 10;
+        string sign = "";
 
         if (percentage >= 90){
             letter = "A";
@@ -23,10 +25,16 @@ class Program
             letter = "F";
         }
 
+        if (remainder >= 7 && percentage < 90 && percentage >= 60){
+            sign = "+";
+        }else if(remainder < 3 && percentage >= 60){
+            sign = "-";
+        }
+
         if( percentage >= 70){ 
-            Console.WriteLine($"Your grade is {letter}! Congratulations! You approved the semester.");
+            Console.WriteLine($"Your grade is {letter}{sign}! Congratulations! You approved the semester.");
         }else{
-            Console.WriteLine($"Your grade is {letter}. Sorry, You need to perform the semester again.");
+            Console.WriteLine($"Your grade is {letter}{sign}. Sorry, You need to perform the semester again.");
         }
 
     }
