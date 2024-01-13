@@ -15,7 +15,7 @@ class Program
         string numberString = Console.ReadLine();
         int theNumber = int.Parse(numberString);
 
-        while (theNumber > 0){
+        while (theNumber != 0){
             numbers.Add(theNumber);
             Console.Write("Enter number: ");
             numberString = Console.ReadLine();
@@ -25,18 +25,25 @@ class Program
         int sum = 0;
         double average = 0;
         int largest = 0;
+        int smallestPositive = 0;
 
         foreach(int number in numbers){
             sum += number;
             if(number > largest){
                 largest = number;
             }
+            if(smallestPositive == 0){
+                smallestPositive = number;
+            }else if(number > 0 && smallestPositive > number){
+                smallestPositive = number;
+            }
         }
-        average = sum / numbers.Count;
+        average = (double)sum / numbers.Count;
 
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {largest}");
+        Console.WriteLine($"The smallest positive number is: {smallestPositive}");
 
     }
 }
