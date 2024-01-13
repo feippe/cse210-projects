@@ -14,13 +14,19 @@ class Program
         string guessNumberString = Console.ReadLine();
         int guessNumber = int.Parse(guessNumberString);
 
-        if(magicNumber == guessNumber){
-            Console.WriteLine("Yes!");
-        }else if(magicNumber > guessNumber){
-            Console.WriteLine("Higher");
-        }else{
-            Console.WriteLine("Lower");
+        while (magicNumber != guessNumber){
+            if(magicNumber > guessNumber){
+                Console.WriteLine("Higher");
+            }else{
+                Console.WriteLine("Lower");
+            }
+            
+            Console.WriteLine("What is your guess?");
+            guessNumberString = Console.ReadLine();
+            guessNumber = int.Parse(guessNumberString);
         }
+
+        Console.WriteLine("Yes!");
 
     }
 }
