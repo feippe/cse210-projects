@@ -7,8 +7,8 @@ class Program
         //Console.WriteLine("Hello Prep2 World!");
 
         Console.WriteLine("Please, write your percentage:");
-        string percentajeString = Console.ReadLine();
-        int percentaje = int.Parse(percentajeString);
+        string percentageString = Console.ReadLine();
+        int percentage = int.Parse(percentageString);
 
         string letter;
 
@@ -20,8 +20,8 @@ class Program
             letter = "C";
         }else if (percentage >= 60){
             letter = "D";
-        }else {
-            letter = "F"
+        }else{
+            letter = "F";
         }
 
         if( percentage >= 70){
