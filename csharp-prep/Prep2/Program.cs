@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello Prep2 World!");
 
         Console.WriteLine("Please, write your percentage:");
         string percentageString = Console.ReadLine();
@@ -24,7 +23,7 @@ class Program
             letter = "F";
         }
 
-        if( percentage >= 70){
+        if( percentage >= 70){ 
             Console.WriteLine($"Your grade is {letter}! Congratulations! You approved the semester.");
         }else{
             Console.WriteLine($"Your grade is {letter}. Sorry, You need to perform the semester again.");
