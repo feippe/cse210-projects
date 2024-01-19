@@ -9,11 +9,11 @@ public class Entry{
     List<string> _prompts = new List<string>();
 
     public Entry(){
-        _prompts.Add("bla bla bla");
-        _prompts.Add("ble ble ble");
-        _prompts.Add("bli bli bli");
-        _prompts.Add("blo blo blo");
-        _prompts.Add("blu blu blu");
+        _prompts.Add("Who was the most interesting person I interacted with today?");
+        _prompts.Add("What was the best part of my day?");
+        _prompts.Add("How did I see the hand of the Lord in my life today?");
+        _prompts.Add("What was the strongest emotion I felt today?");
+        _prompts.Add("If I had one thing I could do over today, what would it be?");
     }
 
     public void Display(){
@@ -24,7 +24,7 @@ public class Entry{
     public string GetDataInALine(){
         return $"{_date}||{_place}||{_prompt}||{_response}";
     }
-    
+
     public void SetDataByLine(string line){
         string[] parts = line.Split("||");
         _date = parts[0];

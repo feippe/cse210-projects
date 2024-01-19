@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 
+//I added more information to the Entries as an excess of the requirement.
+
 class Program
 {
     static void Main(string[] args)
