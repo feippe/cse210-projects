@@ -3,6 +3,7 @@ public class Entry{
     public string _date;
     public string _prompt;
     public string _response;
+    public string _place;
     private Random _random = new Random();
 
     List<string> _prompts = new List<string>();
@@ -16,18 +17,20 @@ public class Entry{
     }
 
     public void Display(){
-        Console.WriteLine($"Date: {_date} - Prompt: {_prompt}");
+        Console.WriteLine($"Date: {_date} - Place: {_place} - Prompt: {_prompt}");
         Console.WriteLine(_response);
     }
 
     public string GetDataInALine(){
-        return $"{_date}||{_prompt}||{_response}";
+        return $"{_date}||{_place}||{_prompt}||{_response}";
     }
+    
     public void SetDataByLine(string line){
         string[] parts = line.Split("||");
         _date = parts[0];
-        _prompt = parts[1];
-        _response = parts[2];
+        _place = parts[1];
+        _prompt = parts[2];
+        _response = parts[3];
     }
 
     public void ReadAndCreateNewEntry(){
@@ -37,6 +40,10 @@ public class Entry{
 
         int position = _random.Next(_prompts.Count);
         _prompt = _prompts[position];
+
+        Console.WriteLine("Write your place: ");
+        Console.Write("> ");
+        _place = Console.ReadLine();
 
         Console.WriteLine(_prompt);
         Console.Write("> ");
