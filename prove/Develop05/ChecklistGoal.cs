@@ -14,16 +14,16 @@ public class ChecklistGoal : Goal {
         _amountCompleted = amount;
     }
 
-    public override void RecordEvent() {
-
-    }
-
     public override bool IsComplete() {
         return _amountCompleted==_target;
     }
 
-    public override string GetDetailsString() {
-        return "";
+    public override int SetNewRecord(){
+        if(IsComplete()==false){
+            _amountCompleted++;
+            return GetPoints();
+        }
+        return 0;
     }
 
     public override string GetResumeForList() {

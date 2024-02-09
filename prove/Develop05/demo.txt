@@ -1,4 +1,5 @@
-15
-SimpleGoal|simplename|simpledescription|123|False
-EternalGoal|eternalname|eternaldescription|234|False
-ChecklistGoal|checklistname|checklistdescription|345|0|5|10
+727
+SimpleGoal|simplename|simpledescription|123|True
+EternalGoal|eternalname|eternaldescription|234
+ChecklistGoal|checklistname|checklistdescription|345|1|2|10
+SimpleGoal|gla basf as|asf f dasf asf ad|10|True

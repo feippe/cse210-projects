@@ -19,13 +19,12 @@ public abstract class Goal {
     public int GetPoints(){
         return _points;
     }
+    public virtual int SetNewRecord(){
+        return GetPoints();
+    }
 
-    public abstract void RecordEvent();
-
-    public abstract bool IsComplete();
-
-    public virtual string GetDetailsString() {
-        return _description;
+    public virtual bool IsComplete(){
+        return false;
     }
 
     public abstract string GetResumeForList();

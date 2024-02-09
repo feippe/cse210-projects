@@ -6,15 +6,17 @@ public class SimpleGoal : Goal {
         _isComplete = false;
     }
 
-    public override void RecordEvent() {
-
-    }
-
     public override bool IsComplete() {
         return _isComplete;
     }
+    
     public void Complete(){
         _isComplete = true;
+    }
+
+    public override int SetNewRecord(){
+        Complete();
+        return GetPoints();
     }
 
     public override string GetResumeForList() {
