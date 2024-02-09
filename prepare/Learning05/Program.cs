@@ -19,7 +19,7 @@ class Program
             Console.WriteLine($"{shape.GetColor()} - {shape.GetArea()}");
         }
 
-
+        
 
 
     }

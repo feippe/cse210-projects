@@ -1,0 +1,4 @@
+15
+SimpleGoal|simplename|simpledescription|123|False
+EternalGoal|eternalname|eternaldescription|234|False
+ChecklistGoal|checklistname|checklistdescription|345|0|5|10
