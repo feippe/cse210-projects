@@ -27,8 +27,8 @@ class Program
         Console.WriteLine("=== Wellcome to Expenses System ===");
         Console.WriteLine("");
         Console.Write("Please write the name of your data base: ");
-        //string dataBaseName = Console.ReadLine();
-        string dataBaseName = "feippe";
+        string dataBaseName = Console.ReadLine();
+        //string dataBaseName = "feippe";
         string dataBaseFilesPath = $"{dataBasePath}/{dataBaseName}";
 
         if(FolderExists(dataBaseFilesPath)){

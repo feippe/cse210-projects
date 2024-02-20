@@ -1,41 +1,30 @@
-public abstract class Expense 
+public abstract class Expense:Movement
 {
-    private DateTime _date;
-    private double _value;
-    private Category _category;
-    private string _description;
-    private User _user;
 
-    public Expense(User user, double value, Category category, string description){
-        _date = new DateTime();
-        _value = value;
-        _category = category;
-        _description = description;
-        _user = user;
+    public Expense(User user, double value, Category category, string description):base(user, value, category, description){
+
     }
 
-    public DateTime GetDate(){
-        return _date;
+    public override string[] GetToBalance(){
+        string[] result = {
+            $"{GetDateString()}",
+            $"{GetDescription()}",
+            $"",
+            $"($ {GetValueFormated()})"
+        };
+        return result;
     }
 
-    public double GetValue(){
-        return _value;
+    public abstract string GetToShow();
+
+    public abstract string GetDataForSave();
+
+    public override double GetValueExpense(){
+        return GetValue();
     }
 
-    public Category GetCategory(){
-        return _category;
-    }
-
-    public string GetDescription(){
-        return _description;
-    }
-
-    public User GetUser(){
-        return _user;
-    }
-
-    public virtual string GetToShow(){
-        return $"${GetValue()} - {GetCategory().GetName()} - {GetDate()} - {GetUser().GetName()}";
+    public override double GetValueIncome(){
+        return 0;
     }
 
 }

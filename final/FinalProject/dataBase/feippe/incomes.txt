@@ -1,5 +1,6 @@
 DATABASE INCOMES
-F|1/1/0001 0:00:00|321.31|testing|jgf ytcytc yu|Gabriel Feippe|2|Monthly
-V|1/1/0001 0:00:00|654.64|something|jghf ytcuyf u|Leandro Feippe
-V|1/1/0001 0:00:00|123.25|probando|ugyhfuhgc|Vanessa Puyol
-V|1/1/0001 0:00:00|6.5|nothing|juhv|Valentina Feippe
+F|02/01/2024|321.31|testing|jgf ytcytc yu|Gabriel Feippe|2|Monthly
+V|02/20/2024|654.64|something|jghf ytcuyf u|Leandro Feippe
+V|02/12/2024|123.25|probando|ugyhfuhgc|Vanessa Puyol
+V|02/08/2024|6.5|nothing|juhv|Valentina Feippe
+V|02/19/2024|8888.8|something|uyrf|Emiliano Feippe

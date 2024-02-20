@@ -6,11 +6,11 @@ public class VariableIncome:Income
     }
 
     public override string GetToShow(){
-        return $"${GetValue()} [V] - {GetCategory().GetName()} - {GetDate()} - {GetUser().GetName()}";
+        return $"${GetValue()} [V] - {GetCategory().GetName()} - {GetDateString()} - {GetUser().GetName()}";
     }
 
     public override string GetDataForSave(){
-        return $"V|{GetDate()}|{GetValue()}|{GetCategory().GetName()}|{GetDescription()}|{GetUser().GetName()}";
+        return $"V|{GetDateString()}|{GetValue()}|{GetCategory().GetName()}|{GetDescription()}|{GetUser().GetName()}";
     }
     
 }

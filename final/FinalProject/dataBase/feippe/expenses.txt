@@ -1,1 +1,5 @@
 DATABASE EXPENSES
+V|02/15/2024|321.123|something|jughc|Leandro Feippe
+F|02/10/2024|654.32|nothing|jhgc|Emiliano Feippe|3|Annual
+V|02/19/2024|333|probando|ugtfd|Vanessa Puyol
+V|02/19/2024|9999.9|nothing|uytfuyvf|Valentina Feippe

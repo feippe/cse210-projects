@@ -11,10 +11,10 @@ public class FixedIncome:Income
     }
 
     public override string GetToShow(){
-        return $"${GetValue()} [F] - {GetCategory().GetName()} - {GetDate()} - {GetUser().GetName()}";
+        return $"${GetValue()} [F] - {GetCategory().GetName()} - {GetDateString()} - {GetUser().GetName()}";
     }
     
     public override string GetDataForSave(){
-        return $"F|{GetDate()}|{GetValue()}|{GetCategory().GetName()}|{GetDescription()}|{GetUser().GetName()}|{GetFrequency().GetId()}|{GetFrequency().GetName()}";
+        return $"F|{GetDateString()}|{GetValue()}|{GetCategory().GetName()}|{GetDescription()}|{GetUser().GetName()}|{GetFrequency().GetId()}|{GetFrequency().GetName()}";
     }
 }
